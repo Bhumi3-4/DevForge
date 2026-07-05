@@ -1,10 +1,10 @@
-## **DevForge**
+# **DevForge**
 It's a platform where developers post what they're working on, find teammates who actually have the skills they need, and then manage the whole project together — tasks, chat, a kanban board — without bouncing between five different apps.
 
 Live: dev-forge-delta.vercel.app
 Repo: github.com/Bhumi3-4/DevForge
 
-# **What you can do with it**
+## **What you can do with it**
 
 -**Find collaborators**
 Post a project with a description, tech stack, and tags. Other developers can browse, filter by technology, and apply to join. You review applications and decide who's in.
@@ -18,7 +18,7 @@ Every project gets a real-time chat room. There's also 1:1 direct messaging betw
 -**Stay informed**
 In-app notifications for the things that actually matter: someone applied to your project, your application got accepted, a task was assigned to you. No noise, just signal.
 
-#**Tech Stack**
+## **Tech Stack**
 I built this as a full MERN stack app with real-time features on top:
 -Frontend: React (Vite) + Tailwind CSS, React Router v6, Axios (with JWT interceptors), Socket.io client, @hello-pangea/dnd for drag-and-drop, Lucide for icons.
 -Backend: Node.js + Express, MongoDB + Mongoose, Socket.io server, JWT for auth, bcryptjs for password hashing, Helmet for security headers.
@@ -82,7 +82,7 @@ bashnpm run dev
 4. Open it
 Go to http://localhost:5173, register an account, and the app is yours.
 
-# **License**
+**License**
 MIT 
 License
 MIT
