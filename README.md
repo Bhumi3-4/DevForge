@@ -4,7 +4,7 @@ It's a platform where developers post what they're working on, find teammates wh
 Live: dev-forge-delta.vercel.app
 Repo: github.com/Bhumi3-4/DevForge
 
-#**What you can do with it**
+# **What you can do with it**
 
 -**Find collaborators**
 Post a project with a description, tech stack, and tags. Other developers can browse, filter by technology, and apply to join. You review applications and decide who's in.
@@ -26,18 +26,20 @@ I built this as a full MERN stack app with real-time features on top:
 
 ## Screenshots
 <p align="center">
-  <img src="screenshots/homepage.png" alt="Dashboard" width="23%">
-  <img src="screenshots/photo1.png" alt="Details" width="23%">
-  <img src="screenshots/questions.png" alt="Questions" width="23%">
-  <img src="screenshots/feedback1.png" alt="Feedback" width="23%">
+  <img src="screenshots/Homepage.png" alt="homepage" width="23%">
+  <img src="screenshots/Projects.png" alt="projects" width="23%">
+  <img src="screenshots/newProject.png" alt="new project" width="23%">
 </p>
 <p align="center">
-  <img src="screenshots/feedback2.png" alt="Feedback" width="23%">
-  <img src="screenshots/analytics.png" alt="Analytics" width="23%">
-  <img src="screenshots/history.png" alt="History" width="23%">
+  <img src="screenshots/projectDetails.png" alt="project details" width="23%">
+  <img src="screenshots/joiningRequest.png" alt="request" width="23%">
+  <img src="screenshots/liveChat.png" alt="live chat" width="23%">
+</p>
+<p align="center">
+  <img src="screenshots/taskAssignment.png" alt="task assignment" width="23%">
 </p>
 
-#**Setup Instructions**
+# **Setup Instructions**
 You'll need Node.js (v18+) and either a local MongoDB instance or a free MongoDB Atlas cluster.
 
 **1. Clone it**
@@ -80,7 +82,7 @@ bashnpm run dev
 4. Open it
 Go to http://localhost:5173, register an account, and the app is yours.
 
-#**License**
+# **License**
 MIT 
 License
 MIT
