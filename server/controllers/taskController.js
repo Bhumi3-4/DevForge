@@ -21,9 +21,9 @@ const ensureProjectMember = async (projectId, userId) => {
   return project;
 };
 
-// @desc    Create a new task
-// @route   POST /api/tasks/:projectId
-// @access  Private (project members only)
+// desc    Create a new task
+// route   POST /api/tasks/:projectId
+// access  Private (project members only)
 const createTask = async (req, res, next) => {
   const { projectId } = req.params;
   const { title, description, assignee, priority, dueDate } = req.body;
@@ -63,9 +63,9 @@ const createTask = async (req, res, next) => {
   });
 };
 
-// @desc    Get all tasks for a project
-// @route   GET /api/tasks/:projectId
-// @access  Private (project members only)
+// desc    Get all tasks for a project
+// route   GET /api/tasks/:projectId
+// access  Private (project members only)
 const getProjectTasks = async (req, res, next) => {
   const { projectId } = req.params;
   const { status, assignee, priority } = req.query;
@@ -89,9 +89,9 @@ const getProjectTasks = async (req, res, next) => {
   });
 };
 
-// @desc    Get single task by ID
-// @route   GET /api/tasks/:projectId/:taskId
-// @access  Private (project members only)
+// desc    Get single task by ID
+// route   GET /api/tasks/:projectId/:taskId
+// access  Private (project members only)
 const getTaskById = async (req, res, next) => {
   const { projectId, taskId } = req.params;
 
@@ -110,9 +110,9 @@ const getTaskById = async (req, res, next) => {
   res.status(200).json({ success: true, task });
 };
 
-// @desc    Update task (title, description, priority, due date, status)
-// @route   PUT /api/tasks/:projectId/:taskId
-// @access  Private (project members only)
+// desc    Update task (title, description, priority, due date, status)
+// route   PUT /api/tasks/:projectId/:taskId
+// access  Private (project members only)
 const updateTask = async (req, res, next) => {
   const { projectId, taskId } = req.params;
 
@@ -161,9 +161,9 @@ const updateTask = async (req, res, next) => {
   });
 };
 
-// @desc    Assign or reassign a task to a project member
-// @route   PUT /api/tasks/:projectId/:taskId/assign
-// @access  Private (project members only)
+// desc    Assign or reassign a task to a project member
+// route   PUT /api/tasks/:projectId/:taskId/assign
+// access  Private (project members only)
 const assignTask = async (req, res, next) => {
   const { projectId, taskId } = req.params;
   const { assignee } = req.body; // null/undefined to unassign
@@ -203,9 +203,9 @@ const assignTask = async (req, res, next) => {
   await task.populate('assignee', 'name email profileImage');
 };
 
-// @desc    Delete a task
-// @route   DELETE /api/tasks/:projectId/:taskId
-// @access  Private (project members only)
+// desc    Delete a task
+// route   DELETE /api/tasks/:projectId/:taskId
+// access  Private (project members only)
 const deleteTask = async (req, res, next) => {
   const { projectId, taskId } = req.params;
 
@@ -225,9 +225,9 @@ const deleteTask = async (req, res, next) => {
   });
 };
 
-// @desc    Get tasks assigned to the logged-in user across all projects
-// @route   GET /api/tasks/my-tasks
-// @access  Private
+// desc    Get tasks assigned to the logged-in user across all projects
+// route   GET /api/tasks/my-tasks
+// access  Private
 const getMyTasks = async (req, res) => {
   const tasks = await Task.find({ assignee: req.user._id })
     .populate('project', 'title status')
