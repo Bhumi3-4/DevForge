@@ -39,7 +39,7 @@ I built this as a full MERN stack app with real-time features on top:
   <img src="screenshots/taskAssignment.png" alt="task assignment" width="23%">
 </p>
 
-# **Setup Instructions**
+## **Setup Instructions**
 You'll need Node.js (v18+) and either a local MongoDB instance or a free MongoDB Atlas cluster.
 
 **1. Clone it**
