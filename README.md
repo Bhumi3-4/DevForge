@@ -84,5 +84,3 @@ Go to http://localhost:5173, register an account, and the app is yours.
 
 **License**
 MIT 
-License
-MIT
