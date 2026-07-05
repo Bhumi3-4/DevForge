@@ -1,4 +1,4 @@
-##**DevForge**
+## **DevForge**
 It's a platform where developers post what they're working on, find teammates who actually have the skills they need, and then manage the whole project together — tasks, chat, a kanban board — without bouncing between five different apps.
 
 Live: dev-forge-delta.vercel.app
